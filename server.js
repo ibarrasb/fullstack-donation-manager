@@ -10,6 +10,7 @@ import Donation from "./donation.model.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+// Define __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
