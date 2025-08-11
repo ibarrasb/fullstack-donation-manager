@@ -2,9 +2,11 @@
     "name": "shelter-donation-tracker",
     "version": "1.0.0",
     "type": "module",
+    "engines": { "node": "20.x" },
     "scripts": {
       "dev": "nodemon server.js",
-      "start": "node server.js"
+      "start": "node server.js",
+      "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
     },
     "dependencies": {
       "cors": "^2.8.5",
@@ -18,4 +20,3 @@
       "nodemon": "^3.1.0"
     }
   }
-  

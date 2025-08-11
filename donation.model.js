@@ -10,7 +10,7 @@ const donationSchema = new mongoose.Schema(
       required: true,
     },
     amount: { type: Number, min: 0, required: true },
-    donated_at: { type: Date, required: true }, // ISO date
+    donated_at: { type: Date, required: true },
   },
   { timestamps: true }
 );
