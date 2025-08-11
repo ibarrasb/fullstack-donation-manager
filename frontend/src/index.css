@@ -1,0 +1,126 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f6f7f9;
+  color: #111;
+}
+
+/* Layout containers */
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h1 {
+  margin: 0 0 1rem;
+}
+
+h2 {
+  margin: 0 0 .75rem;
+  font-size: 1.1rem;
+}
+
+/* Form layout */
+.form .row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  font-size: .9rem;
+}
+
+input,
+select,
+button {
+  padding: .6rem .7rem;
+  border-radius: 8px;
+  border: 1px solid #cfd5df;
+  font-size: .95rem;
+}
+
+input:focus,
+select:focus {
+  outline: 3px solid #b9d6ff;
+  border-color: #6aa6ff;
+}
+
+/* Actions & buttons */
+.actions {
+  margin-top: .75rem;
+  display: flex;
+  gap: .5rem;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #111;
+}
+
+button.link {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  padding: 0;
+  cursor: pointer;
+}
+
+button.link.danger {
+  color: #b91c1c;
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: .6rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.actions-cell {
+  display: flex;
+  gap: .75rem;
+}
+
+/* Misc */
+.muted {
+  color: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .form .row {
+    grid-template-columns: 1fr;
+  }
+}
